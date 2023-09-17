@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background-color: #e6e6e6;
+  color: #564740;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 98vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+kbd {
+  background-color: #f7e3d6;
+  padding: 4px;
+  border: 1px solid #564740;
+  border-radius: 3px;
+  color: #564740;
+  font-weight: bold;
+}
+
+kbd:hover {
+  background-color: #564740;
+  color: #f7e3d6;
+}
+
+main {
+  width: 95vw;
+  margin: 2vh 2vw;
+}
+
+a {
+  text-decoration: none;
+  color: #2e7254;
+}
+
+a:hover {
+  color: #63c199;
+}
+
+h2 {
+  margin-top: 4vh;
+}
+
+hr {
+  border: 2px solid #564740;
+}
+
+.shell {
+  width: 250px;
+  max-width: 90vw;
+  height: 50px;
+  background-color: #564740;
+  color: #f7e3d6;
+  border: 2px solid #f7e3d6;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  min-height: 25px;
+  min-width: 25px;
+  border: 1px solid #80736b;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.copy > img {
+  height: 13px;
+  width: 13px;
+}
+
+.code {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#env-block {
+  display: flex;
+  flex-direction: column;
+}
+
+#script {
+  width: max-content;
+}
+
+.code > p {
+  display: inline;
+  font-family: monospace;
+  margin-right: 4px;
+  color: #63c199;
+}
+
+.browser {
+  width: max-content;
+  height: 30px;
+  background-color: #e6e6e6;
+  color: #564740;
+  border: 2px solid #564740;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image {
+  border: 2px solid #564740;
+  border-radius: 5px;
+  max-width: 90vw;
+}
+
+.banner {
+  border: 2px solid #e6e6e6;
+  border-radius: 5px;
+  max-width: 90vw;
+}
+
+.banner:hover {
+  border: 2px solid #2e7254;
+  border-radius: 5px;
+}
+
+.gif {
+  width: 600px;
+  border: 2px solid #2e7254;
+}
