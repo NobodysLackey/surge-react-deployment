@@ -112,7 +112,7 @@ Your ***Surge URL*** is what will be used as the entry point to your app. This i
 
 To check if a certain URL is available on Surge, just go to "your-desired-url.surge.sh" in your browser. If you see "project not found", then it's available and you can use it!
 
-![not-found](/images/project-not-found.png)
+![not-found](./images/not-found.png)
 
 ## Deploy
 
