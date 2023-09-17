@@ -17,7 +17,7 @@
 
         <p>
           This website will walk you through the steps to deploy a
-          <a href="https://vitejs.dev/">Vite</a> React app with
+          <a href="https://vitejs.dev/" id="vite-link">Vite</a> React app with
           <a href="https://surge.sh/">Surge</a>.
         </p>
 
@@ -51,10 +51,12 @@
         serves pre-built files to the browser, and all necessary data is
         included within the initial load, meaning it doesn't need to query a
         database or server for every user request. The dynamic interactions are
-        handled through JavaScript (<a href="https://en.wikipedia.org/wiki/Dynamic_web_page">client-side</a>) which manipulates the DOM
-        elements directly in the browser, without needing to fetch new pages or
-        data from a server. This results in faster load times and a smoother
-        user experience.
+        handled through JavaScript (<a
+          href="https://en.wikipedia.org/wiki/Dynamic_web_page"
+          >client-side</a
+        >) which manipulates the DOM elements directly in the browser, without
+        needing to fetch new pages or data from a server. This results in faster
+        load times and a smoother user experience.
       </p>
 
       <p>This also means that we can use Surge to deploy it!</p>
@@ -241,7 +243,8 @@
       <p>
         Obviously replace any <b>< ></b> in the above script with your own
         information. Pay close attention to the two URLs in the script above.
-        <em><b>They should be in single quotes</b></em>.
+        <em><b>They should be in single quotes</b></em
+        >.
       </p>
 
       <p>
@@ -271,7 +274,8 @@
 
       <h2>Recap</h2>
       <p>
-        In this walkthrough, you successfully deployed your Vite React app to Surge.
+        In this walkthrough, you successfully deployed your Vite React app to
+        Surge.
       </p>
 
       <p>
@@ -282,7 +286,9 @@
 
       <h2>Resources</h2>
       <ul>
-        <li><a href="https://vitejs.dev/guide/">Vite Docs</a></li>
+        <li>
+          <a href="https://vitejs.dev/guide/" id="vite-link">Vite Docs</a>
+        </li>
         <li>
           <a href="https://surge.sh/help/getting-started-with-surge"
             >Surge Docs</a
@@ -291,9 +297,17 @@
       </ul>
       <br />
       <center>
-        <a href="https://surge.sh">
-          <img src="./images/logo.png" alt="surge" />
-        </a>
+        <div class="logos">
+          <a href="https://react.dev/">
+            <img src="./images/react.png" alt="react" id="react" />
+          </a>
+          <a href="https://surge.sh">
+            <img src="./images/logo.png" alt="surge" id="surge" />
+          </a>
+          <a href="https://vitejs.dev/">
+            <img src="./images/vite.png" alt="vite" id="vite" />
+          </a>
+        </div>
       </center>
     </main>
   </body>

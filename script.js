@@ -11,7 +11,7 @@ const copy = (element) => {
   let boxImg = shell.querySelector('img')
 
   if (shell.querySelector('code').innerText === 'SURGE_LOGIN=') {
-    navigator.clipboard.writeText('SURGE_LOGIN= \n  SURGE_TOKEN=')
+    navigator.clipboard.writeText('SURGE_LOGIN=\nSURGE_TOKEN=')
   } else {
     navigator.clipboard.writeText(shell.querySelector('code').innerText)
   }
