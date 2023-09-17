@@ -128,7 +128,9 @@ hr {
 
 .gif {
   width: 600px;
-  border: 2px solid #2e7254;
+  border: 2px solid #63c199;
+  background-color: black;
+  padding: 5px;
 }
 
 .logos {
