@@ -74,6 +74,8 @@ Paste the returned token to the above environment variable. No spaces, no quotes
 
 *Make sure to add `.env` to your `.gitignore` file. Never push sensitive information up to GitHub!*
 
+Adding these variables will green-light our app to 
+
 ## Setting Up a Custom Domain (optional)
 
 We can set up a file in your project that will remember the particular domain you want to use. This step is entirely optional.
