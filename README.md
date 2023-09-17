@@ -85,7 +85,7 @@ First, we'll need to see that the URL you want to use is available. Open a brows
 The URL should follow this format:
 
 ```sh
-https://staticdeployment.surge.sh/
+https://reactdeployment.surge.sh/
 ```
 
 If it's available, the URL should show this in the browser:
