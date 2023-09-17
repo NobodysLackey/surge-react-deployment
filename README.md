@@ -112,10 +112,6 @@ Obviously replace any `< >` in the above script with your own information. Pay c
 
 Your ***Surge URL*** is what will be used as the entry point to your app. This is what people will see, and the one you'll want to put on your portfolio, LinkedIn, etc. 
 
-To check if a certain URL is available on Surge, just go to "your-desired-url.surge.sh" in your browser. If you see "project not found", then it's available and you can use it!
-
-![not-found](./images/not-found.png)
-
 ## Deploy
 
 Any time you want to deploy, run that custom script you put in your `package.json` file. Do so from the root of your project:
