@@ -12,7 +12,7 @@ body {
 }
 
 kbd {
-  background-color: #f7e3d6;
+  background-color: #fbf3ed;
   padding: 4px;
   border: 1px solid #564740;
   border-radius: 3px;
@@ -22,7 +22,7 @@ kbd {
 
 kbd:hover {
   background-color: #564740;
-  color: #f7e3d6;
+  color: #fbf3ed;
   cursor: default;
 }
 
@@ -153,4 +153,3 @@ hr {
 #vite {
   max-width: 20vw;
 }
-
