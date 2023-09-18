@@ -254,7 +254,25 @@
         put on your portfolio, LinkedIn, etc.
       </p>
 
-      <p>This script</p>
+      <p>This script performs the following actions:</p>
+
+      <ol>
+        <li>
+          Runs the <em>vite build</em> command that creates a production build of
+          our React App contained in a <b>/dist</b> folder
+        </li>
+        <li>Creates a new <b>CNAME</b> file in that <b>/dist</b> folder (we lose our old one each time a new <b>/dist</b> folder is created)</li>
+        <li>Inserts the text of our chosen domain into that file</li>
+        <li>
+          Runs the <em>surge</em> command to redeploy our app. To ensure it runs
+          automatically without needing any input from us, the
+          following options are predefined:
+          <ul>
+            <li>The project directory: <b>--project ./dist</b></li>
+            <li>The domain name: <b>--domain https://reactdeployment.surge.sh/</b></li>
+          </ul>
+        </li>
+      </ol>
 
       <h2>Deploy</h2>
 
