@@ -2,7 +2,7 @@
 
 ![deploy](./images/readme-banner.png)
 
-This website will walk you through the steps to deploy a [Vite](https://vitejs.dev/) React app with [Surge](https://surge.sh/help/getting-started-with-surge). We will walk through all of the necessary steps from start to finish, and even cover how you can choose a custom domain as well.
+[This lesson](https://reactdeployment.surge.sh/) will walk you through the steps to deploy a [Vite](https://vitejs.dev/) React app with [Surge](https://surge.sh/help/getting-started-with-surge). We will walk through all of the necessary steps from start to finish, and even cover how you can choose a custom domain as well.
 
 ## Objectives
 
