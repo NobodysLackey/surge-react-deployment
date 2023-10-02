@@ -105,12 +105,19 @@ Add the following script ***in*** your `"scripts"` section of your `package.json
 If you already have a "build" script, replace it:
 
 ```json
-"build": "vite build && touch ./dist/CNAME && echo <SURGE_URL_IN_SINGLE_QUOTES> >> ./dist/CNAME && npx surge --project ./dist --domain <SURGE_URL_IN_SINGLE_QUOTES>"
+"build": "vite build && touch ./dist/CNAME && echo <SURGE_URL_IN_SINGLE_QUOTES> >> ./dist/CNAME && npx surge --project ./dist"
 ```
 
 Obviously replace any `< >` in the above script with your own information. Pay close attention to the two URLs in the script above. They ***should be in single quotes***.
 
 Your ***Surge URL*** is what will be used as the entry point to your app. This is what people will see, and the one you'll want to put on your portfolio, LinkedIn, etc. 
+
+This script performs the following actions:
+
+1. Runs the *vite build* command that creates a production build of our React App contained in a **/dist** folder
+2. Creates a new **CNAME** file in that **/dist** folder (we lose our old one each time a new **/dist** folder is created)
+3. Inserts the text of our chosen domain into that file
+4. Runs the *surge* command to redeploy our app. To ensure it runs automatically without needing any input from us, the project directory option is predefined.
 
 ## Deploy
 

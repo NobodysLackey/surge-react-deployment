@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="./images/check.png" as="check">
+    <link rel="preload" href="./images/check.png" as="check" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -234,7 +234,7 @@
           <code
             >"build": "vite build && touch ./dist/CNAME && echo
             &lt;SURGE_URL_IN_SINGLE_QUOTES&gt; >> ./dist/CNAME && npx surge
-            --project ./dist --domain &lt;SURGE_URL_IN_SINGLE_QUOTES&gt;"</code
+            --project ./dist"</code
           >
         </div>
         <div class="copy">
@@ -259,19 +259,18 @@
 
       <ol>
         <li>
-          Runs the <em>vite build</em> command that creates a production build of
-          our React App contained in a <b>/dist</b> folder
+          Runs the <em>vite build</em> command that creates a production build
+          of our React App contained in a <b>/dist</b> folder
         </li>
-        <li>Creates a new <b>CNAME</b> file in that <b>/dist</b> folder (we lose our old one each time a new <b>/dist</b> folder is created)</li>
+        <li>
+          Creates a new <b>CNAME</b> file in that <b>/dist</b> folder (we lose
+          our old one each time a new <b>/dist</b> folder is created)
+        </li>
         <li>Inserts the text of our chosen domain into that file</li>
         <li>
           Runs the <em>surge</em> command to redeploy our app. To ensure it runs
-          automatically without needing any input from us, the
-          following options are predefined:
-          <ul>
-            <li>The project directory: <b>--project ./dist</b></li>
-            <li>The domain name: <b>--domain https://reactdeployment.surge.sh/</b></li>
-          </ul>
+          automatically without needing any input from us, the project directory
+          option is predefined.
         </li>
       </ol>
 
