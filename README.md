@@ -102,13 +102,13 @@ Next, we'll create a "build" script in our **package.json** that will perform al
 
 Add the following script ***in*** your `"scripts"` section of your `package.json` file.
 
-If you already have a "build" script, replace it:
+If you already have a "build" script, replace it with this:
 
 ```json
 "build": "vite build && touch ./dist/CNAME && echo <SURGE_URL_IN_SINGLE_QUOTES> >> ./dist/CNAME && npx surge --project ./dist"
 ```
 
-Obviously replace any `< >` in the above script with your own information. Pay close attention to the two URLs in the script above. They ***should be in single quotes***.
+Obviously replace the `< >` in the above script with your own information. Pay close attention to the URL in the script above. It ***should be in single quotes***.
 
 Your ***Surge URL*** is what will be used as the entry point to your app. This is what people will see, and the one you'll want to put on your portfolio, LinkedIn, etc. 
 
@@ -121,7 +121,7 @@ This script performs the following actions:
 
 ## Deploy
 
-Any time you want to deploy, run that custom script you put in your `package.json` file. Do so from the root of your project:
+Any time you want to deploy, run the custom script you put in your `package.json` file. Do so from the root of your project:
 
 ```sh
 npm run build
