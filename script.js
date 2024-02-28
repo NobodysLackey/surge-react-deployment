@@ -1,4 +1,4 @@
-let elements = ['install', 'surge-one', 'env', 'token', 'script', 'build']
+let elements = ['install', 'surge-one', 'env', 'token', 'script-one', 'script-two', 'script-three', 'build']
 let copied = false
 let out = true
 

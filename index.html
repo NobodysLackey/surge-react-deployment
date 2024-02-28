@@ -185,6 +185,37 @@
         push sensitive information up to GitHub!</em>
     </p>
 
+    <h2>Building Your Production App</h2>
+
+    <p>Now, you need to tell Vite to build a production version of your app. If you intend on using a custom domain, skip ahead to that section. If not, run the following:</p>
+
+    <div class="shell shadow" id="script-one">
+      <div class="code">
+        <p>$</p>
+        <code>vite build</code>
+      </div>
+      <div class="copy">
+        <img src="./images/copy.png" alt="copy" />
+      </div>
+    </div>
+
+    <p>Running the <b>vite build</b> command creates a production build of our React App contained in a <b>/dist</b> folder. Surge will use this to deploy our app.</p>
+
+    <h2>Deploy</h2>
+    <p>Once this completes, you're ready to deploy with Surge. Run the following command:</p>
+
+    <div class="shell shadow" id="script-two">
+      <div class="code">
+        <p>$</p>
+        <code>npx surge --project ./dist</code>
+      </div>
+      <div class="copy">
+        <img src="./images/copy.png" alt="copy" />
+      </div>
+    </div>
+
+    <p>Wait for this to complete. It shouldn't take long. Take note of the domain that Surge selects for you (usually something silly), then navigate to that URL in your browser to see the result! Congratulations, you're deployed!</p>
+
     <h2>Setting Up a Custom Domain (optional)</h2>
     <p>
       We can set up a file in your project that will remember the particular
@@ -226,7 +257,7 @@
 
     <p>If you already have a "build" script, replace it with this:</p>
 
-    <div class="shell shadow" id="script">
+    <div class="shell shadow" id="script-three">
       <div class="code">
         <code>"build": "vite build && npx surge --project ./dist --domain &lt;SURGE_URL_IN_SINGLE_QUOTES&gt;"</code>
       </div>

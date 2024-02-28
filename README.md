@@ -74,7 +74,26 @@ Paste the returned token to the above environment variable. No spaces, no quotes
 
 *Make sure to add `.env` to your `.gitignore` file. Never push sensitive information up to GitHub!*
 
-Adding these variables will green-light our app to 
+## Building Your Production App
+
+Now, you need to tell Vite to build a production version of your app. If you intend on using a custom domain, skip ahead to that section. If not, run the following:
+
+```sh
+vite build
+```
+
+Running the `vite build` command creates a production build of our React App contained in a `/dist` folder. Surge will use this to deploy our app.
+
+## Deploy
+
+Once this completes, you're ready to deploy with Surge. Run the following command:
+
+```sh
+npx surge --project ./dist
+```
+
+Wait for this to complete. It shouldn't take long. Take note of the domain that Surge selects for you (usually something silly), then navigate to that URL in your browser to see the result! Congratulations, you're deployed!
+
 
 ## Setting Up a Custom Domain (optional)
 
