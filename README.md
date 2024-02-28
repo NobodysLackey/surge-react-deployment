@@ -76,7 +76,7 @@ Paste the returned token to the above environment variable. No spaces, no quotes
 
 ## Building Your Production App
 
-Now, you need to tell Vite to build a production version of your app. If you intend on using a custom domain, skip ahead to that section. If not, run the following:
+Now, you need to tell Vite to build a production version of your app. If you intend on using a custom domain, [skip ahead](#setting-up-a-custom-domain-optional) to that section. If not, run the following:
 
 ```sh
 vite build
