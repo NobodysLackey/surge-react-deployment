@@ -6,7 +6,7 @@
 
 ## Objectives
 
-- Learn how to do a one-time install of Surge globally on your machine
+- Learn how to do a one-time [install](#installing-surge) of Surge globally on your machine
 - Set up Surge [environment](#setting-up-surge-environment-variables) variables
 - Learn how to set up a custom domain ([optional](#setting-up-a-custom-domain-optional))
 - Create a custom build script ([optional](#creating-a-custom-build-script))
